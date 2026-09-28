@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #0d1117;
+    color: #e6e6e6;
+    line-height: 1.8;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.85)
+    );
+}
+
+header h1 {
+    font-size: 38px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #9da7b3;
+    font-size: 15px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d8b4fe;
+    padding: 7px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #d8b4fe;
+    color: #161b22;
+}
+
+/* NOVEL */
+
+.novel {
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 25px;
+    background: #161b22;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.novel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.novel h3 {
+    font-size: 25px;
+    color: #d8b4fe;
+    margin-bottom: 25px;
+}
+
+.novel p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* QUOTE */
+
+.quote {
+    padding: 18px;
+    margin: 25px 0;
+    text-align: center;
+    background: #202733;
+    border-left: 4px solid #d8b4fe;
+    color: #e9d5ff;
+    font-size: 18px;
+}
+
+/* CODE */
+
+.code-box {
+    background: #090c10;
+    padding: 18px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+code {
+    color: #7ee787;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+/* MESSAGE */
+
+.message {
+    background: #202733;
+    padding: 18px;
+    margin: 25px 0;
+    text-align: center;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+/* ENDING */
+
+.ending {
+    color: #d8b4fe;
+    font-weight: bold;
+}
+
+/* BUTTON */
+
+.next,
+.back {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 5px;
+    padding: 10px 20px;
+    background: #d8b4fe;
+    color: #161b22;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.next:hover,
+.back:hover {
+    transform: scale(1.05);
+    background: #ffffff;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #6e7681;
+    font-size: 13px;
+}
+
+/* HP */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    .novel {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+
+    .novel img {
+        height: 220px;
+    }
+
+    .novel h3 {
+        font-size: 21px;
+    }
+
+    .novel p {
+        font-size: 15px;
+    }
+}
